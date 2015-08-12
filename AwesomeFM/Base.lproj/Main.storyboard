@@ -21,12 +21,22 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e9H-UQ-ic9">
+                                <rect key="frame" x="0.0" y="90" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.40256999222940504" green="0.60347333043603713" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="LOL-0t-HMw"/>
+                                    <constraint firstAttribute="height" constant="375" id="kl8-gg-vuh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dxQ-wM-1YH" firstAttribute="top" secondItem="GZe-tS-mgp" secondAttribute="top" id="GTc-aY-siE"/>
                             <constraint firstItem="dxQ-wM-1YH" firstAttribute="top" secondItem="uc3-pC-cb4" secondAttribute="bottom" id="OHL-7c-9lP"/>
+                            <constraint firstAttribute="centerX" secondItem="e9H-UQ-ic9" secondAttribute="centerX" id="Rl7-NL-6bh"/>
                             <constraint firstAttribute="bottom" secondItem="dxQ-wM-1YH" secondAttribute="bottom" id="Yku-0b-cMn"/>
+                            <constraint firstAttribute="centerY" secondItem="e9H-UQ-ic9" secondAttribute="centerY" id="bH2-cM-5Fl"/>
                             <constraint firstItem="dxQ-wM-1YH" firstAttribute="leading" secondItem="GZe-tS-mgp" secondAttribute="leading" id="euW-QZ-M5g"/>
                             <constraint firstAttribute="trailing" secondItem="dxQ-wM-1YH" secondAttribute="trailing" id="kNr-kQ-KgB"/>
                         </constraints>
@@ -41,6 +51,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="playListTableView" destination="dxQ-wM-1YH" id="khS-KS-4ZV"/>
+                        <outlet property="testImage" destination="e9H-UQ-ic9" id="zKe-eu-0if"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftc-Or-hqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NjT-bU-g9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="-589.5"/>
+            <point key="canvasLocation" x="61.5" y="-588.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0h8-HM-xhN">

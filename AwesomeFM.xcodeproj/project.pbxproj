@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15D74917AF02986FEC0C2A51 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD4CB3A2ADEBDB359F52AED /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		889B76201B7B6EB4000B7229 /* TestUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B761F1B7B6EB4000B7229 /* TestUrlViewController.swift */; };
 		889DA1EA1B79D46900478A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DA1E91B79D46900478A5A /* AppDelegate.swift */; };
 		889DA1ED1B79D46900478A5A /* AwesomeFM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 889DA1EB1B79D46900478A5A /* AwesomeFM.xcdatamodeld */; };
 		889DA1F21B79D46900478A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889DA1F01B79D46900478A5A /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		5145B78F11B1163A65DF8937 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		889B761F1B7B6EB4000B7229 /* TestUrlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUrlViewController.swift; sourceTree = "<group>"; };
 		889DA1E41B79D46900478A5A /* AwesomeFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889DA1E81B79D46900478A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889DA1E91B79D46900478A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				889DA1E91B79D46900478A5A /* AppDelegate.swift */,
 				889DA1F01B79D46900478A5A /* Main.storyboard */,
 				889DA20C1B79DD9C00478A5A /* PalyListViewController.swift */,
+				889B761F1B7B6EB4000B7229 /* TestUrlViewController.swift */,
 				889DA1F31B79D46900478A5A /* Images.xcassets */,
 				889DA1F51B79D46900478A5A /* LaunchScreen.xib */,
 				889DA1EB1B79D46900478A5A /* AwesomeFM.xcdatamodeld */,
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889B76201B7B6EB4000B7229 /* TestUrlViewController.swift in Sources */,
 				889DA20D1B79DD9C00478A5A /* PalyListViewController.swift in Sources */,
 				889DA1ED1B79D46900478A5A /* AwesomeFM.xcdatamodeld in Sources */,
 				889DA1EA1B79D46900478A5A /* AppDelegate.swift in Sources */,
