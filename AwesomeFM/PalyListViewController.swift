@@ -9,16 +9,12 @@
 import UIKit
 import SnapKit
 
-
-
-//需要花时间把原来的笔记好好的整理一遍才可以了，现在简直总感觉又在踩原来踩过的坑
 class PalyListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //    var playListTableView:UITableView = UITableView()
     @IBOutlet weak var playListTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //初始化tableview
         self._initTableView()
     }
     
