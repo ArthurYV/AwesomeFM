@@ -7,10 +7,8 @@
 //
 
 import UIKit
-import SnapKit
 
 class PalyListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-//    var playListTableView:UITableView = UITableView()
     @IBOutlet weak var playListTableView: UITableView!
     
     override func viewDidLoad() {
@@ -20,16 +18,6 @@ class PalyListViewController: UIViewController, UITableViewDelegate, UITableView
     
     func _initTableView() {
         
-//        self.view.addSubview(playListTableView)
-//        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
-//        let navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
-//        playListTableView.snp_makeConstraints { (make) -> Void in
-//            //要把布局约束全部描述清楚才可以
-//            make.top.equalTo(self.view).offset(navigationBarHeight! + statusBarHeight)
-//            make.left.equalTo(self.view).offset(0)
-//            make.bottom.equalTo(self.view).offset(0)
-//            make.right.equalTo(self.view).offset(0)
-//        }
         
         playListTableView.delegate = self
         playListTableView.dataSource = self
