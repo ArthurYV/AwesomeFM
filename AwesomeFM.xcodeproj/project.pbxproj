@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15D74917AF02986FEC0C2A51 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD4CB3A2ADEBDB359F52AED /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		889DA1EA1B79D46900478A5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DA1E91B79D46900478A5A /* AppDelegate.swift */; };
 		889DA1ED1B79D46900478A5A /* AwesomeFM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 889DA1EB1B79D46900478A5A /* AwesomeFM.xcdatamodeld */; };
-		889DA1EF1B79D46900478A5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DA1EE1B79D46900478A5A /* ViewController.swift */; };
 		889DA1F21B79D46900478A5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889DA1F01B79D46900478A5A /* Main.storyboard */; };
 		889DA1F41B79D46900478A5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889DA1F31B79D46900478A5A /* Images.xcassets */; };
 		889DA1F71B79D46900478A5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 889DA1F51B79D46900478A5A /* LaunchScreen.xib */; };
 		889DA2031B79D46900478A5A /* AwesomeFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DA2021B79D46900478A5A /* AwesomeFMTests.swift */; };
+		889DA20D1B79DD9C00478A5A /* PalyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DA20C1B79DD9C00478A5A /* PalyListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5145B78F11B1163A65DF8937 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		889DA1E41B79D46900478A5A /* AwesomeFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889DA1E81B79D46900478A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889DA1E91B79D46900478A5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		889DA1EC1B79D46900478A5A /* AwesomeFM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AwesomeFM.xcdatamodel; sourceTree = "<group>"; };
-		889DA1EE1B79D46900478A5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		889DA1F11B79D46900478A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		889DA1F31B79D46900478A5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		889DA1F61B79D46900478A5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		889DA1FC1B79D46900478A5A /* AwesomeFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889DA2011B79D46900478A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889DA2021B79D46900478A5A /* AwesomeFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeFMTests.swift; sourceTree = "<group>"; };
+		889DA20C1B79DD9C00478A5A /* PalyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalyListViewController.swift; sourceTree = "<group>"; };
+		DE7585C36D6BC09C715773EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FBD4CB3A2ADEBDB359F52AED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15D74917AF02986FEC0C2A51 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46F8DF920348BF7BC0F08A0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5145B78F11B1163A65DF8937 /* Pods.debug.xcconfig */,
+				DE7585C36D6BC09C715773EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		889DA1DB1B79D46900478A5A = {
 			isa = PBXGroup;
 			children = (
 				889DA1E61B79D46900478A5A /* AwesomeFM */,
 				889DA1FF1B79D46900478A5A /* AwesomeFMTests */,
 				889DA1E51B79D46900478A5A /* Products */,
+				46F8DF920348BF7BC0F08A0A /* Pods */,
+				ED7C45F3992069D0F57E3DD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				889DA1E91B79D46900478A5A /* AppDelegate.swift */,
-				889DA1EE1B79D46900478A5A /* ViewController.swift */,
 				889DA1F01B79D46900478A5A /* Main.storyboard */,
+				889DA20C1B79DD9C00478A5A /* PalyListViewController.swift */,
 				889DA1F31B79D46900478A5A /* Images.xcassets */,
 				889DA1F51B79D46900478A5A /* LaunchScreen.xib */,
 				889DA1EB1B79D46900478A5A /* AwesomeFM.xcdatamodeld */,
@@ -115,6 +131,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ED7C45F3992069D0F57E3DD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD4CB3A2ADEBDB359F52AED /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 889DA2061B79D46900478A5A /* Build configuration list for PBXNativeTarget "AwesomeFM" */;
 			buildPhases = (
+				002FCD2DB3662780706EB435 /* Check Pods Manifest.lock */,
 				889DA1E01B79D46900478A5A /* Sources */,
 				889DA1E11B79D46900478A5A /* Frameworks */,
 				889DA1E21B79D46900478A5A /* Resources */,
+				E9285C01601B574E8A7BA313 /* Copy Pods Resources */,
+				123680761E002460B0EAF119 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,12 +237,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		002FCD2DB3662780706EB435 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		123680761E002460B0EAF119 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9285C01601B574E8A7BA313 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		889DA1E01B79D46900478A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889DA1EF1B79D46900478A5A /* ViewController.swift in Sources */,
+				889DA20D1B79DD9C00478A5A /* PalyListViewController.swift in Sources */,
 				889DA1ED1B79D46900478A5A /* AwesomeFM.xcdatamodeld in Sources */,
 				889DA1EA1B79D46900478A5A /* AppDelegate.swift in Sources */,
 			);
@@ -342,6 +417,7 @@
 		};
 		889DA2071B79D46900478A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5145B78F11B1163A65DF8937 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AwesomeFM/Info.plist;
@@ -352,6 +428,7 @@
 		};
 		889DA2081B79D46900478A5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7585C36D6BC09C715773EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AwesomeFM/Info.plist;
@@ -413,6 +490,7 @@
 				889DA2081B79D46900478A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		889DA2091B79D46900478A5A /* Build configuration list for PBXNativeTarget "AwesomeFMTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +499,7 @@
 				889DA20B1B79D46900478A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
