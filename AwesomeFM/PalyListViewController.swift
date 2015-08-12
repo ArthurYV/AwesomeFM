@@ -9,7 +9,10 @@
 import UIKit
 
 class PalyListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 3d3c2fa00c25f1349f56abd1a860a553b302b99e
     @IBOutlet weak var playListTableView: UITableView!
     
     override func viewDidLoad() {
