@@ -18,6 +18,7 @@ class PalyListViewController: UIViewController, UITableViewDelegate, UITableView
     var session:NSURLSession?
     var dataTask:NSURLSessionDataTask?
     
+    //这里没有init方法也是可以的，我需要弄明白的是为什么这里不能使用let来声明属性
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.session = NSURLSession.sharedSession()
@@ -48,7 +49,7 @@ class PalyListViewController: UIViewController, UITableViewDelegate, UITableView
         self._handleNetworkRequest()
     }
     
-    //实现下载进度
+    //监测下载进度
     func URLSession(session: NSURLSession, downloadTask: NSURLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         //参数说明
         //totalBytesWritten：已经下载的字节数

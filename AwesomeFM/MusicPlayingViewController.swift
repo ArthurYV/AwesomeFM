@@ -26,8 +26,9 @@ class MusicPlayingViewController: UIViewController {
         sessionConfiguration.timeoutIntervalForRequest = 30.0
         
         let session = NSURLSession(configuration: sessionConfiguration)
-        //swift用起来真爽
-        let url = NSURL(string:"http://s.tongbu.com/s?deviceid=1&clienttype=2&key=淘宝".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
+        
+        //swift用起来真爽，调用一个函数就是这么酸爽
+        let url = NSURL(string:"https://itunes.apple.com/search?term=apple&media=software".stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!)
         //以链条的形式书写task，直接在末尾启动任务
         session.dataTaskWithURL(url!, completionHandler: { (data:NSData!, response:NSURLResponse!, error:NSError!) -> Void in
             
@@ -36,7 +37,6 @@ class MusicPlayingViewController: UIViewController {
             }else{
                 println("json value is illegal")
             }
-            
             
         }).resume()
     }

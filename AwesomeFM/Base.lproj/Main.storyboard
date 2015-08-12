@@ -61,7 +61,7 @@
         <!--Item 1-->
         <scene sceneID="cSY-pZ-lCo">
             <objects>
-                <viewController id="j9U-Kx-rc5" customClass="MusicPlayingViewController" customModule="AwesomeFM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="j9U-Kx-rc5" customClass="StopAndRunViewController" customModule="AwesomeFM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZhZ-2O-J4z"/>
                         <viewControllerLayoutGuide type="bottom" id="KbG-ds-ICe"/>
@@ -69,10 +69,44 @@
                     <view key="view" contentMode="scaleToFill" id="lgn-Tf-Q24">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7D-ay-TRN">
+                                <rect key="frame" x="50" y="318" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopDownload:" destination="j9U-Kx-rc5" eventType="touchUpInside" id="J8Q-9Y-8JG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbP-zL-8uw">
+                                <rect key="frame" x="295" y="318" width="30" height="30"/>
+                                <state key="normal" title="Run">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resumeDownload:" destination="j9U-Kx-rc5" eventType="touchUpInside" id="eWE-7a-8xs"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Juv-QA-Wak">
+                                <rect key="frame" x="112" y="418" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q7D-ay-TRN" firstAttribute="leading" secondItem="lgn-Tf-Q24" secondAttribute="leading" constant="50" id="P3T-NI-Seo"/>
+                            <constraint firstAttribute="centerY" secondItem="dbP-zL-8uw" secondAttribute="centerY" id="RGC-S2-dAd"/>
+                            <constraint firstAttribute="trailing" secondItem="dbP-zL-8uw" secondAttribute="trailing" constant="50" id="jpY-dM-LFJ"/>
+                            <constraint firstAttribute="centerY" secondItem="q7D-ay-TRN" secondAttribute="centerY" id="n63-Ea-JrV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="vFS-tj-td2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="progress" destination="Juv-QA-Wak" id="iU3-dF-awe"/>
+                        <outlet property="resumeBtn" destination="dbP-zL-8uw" id="eiS-0g-bD5"/>
+                        <outlet property="stopBtn" destination="q7D-ay-TRN" id="WiG-Eo-bGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NjT-bU-g9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
