@@ -61,7 +61,7 @@
         <!--Item 1-->
         <scene sceneID="cSY-pZ-lCo">
             <objects>
-                <viewController id="j9U-Kx-rc5" sceneMemberID="viewController">
+                <viewController id="j9U-Kx-rc5" customClass="MusicPlayingViewController" customModule="AwesomeFM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZhZ-2O-J4z"/>
                         <viewControllerLayoutGuide type="bottom" id="KbG-ds-ICe"/>
