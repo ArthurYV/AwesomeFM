@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3BF74FE6-57D6-4085-A563-A8F2F1D8A8F3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AwesomeFM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7776EB9131506A597C05ADC89FFD35DEB4B063D</key>
+		<string>arthuryv:ArthurYV/AwesomeFM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AwesomeFM.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7776EB9131506A597C05ADC89FFD35DEB4B063D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>arthuryv:ArthurYV/AwesomeFM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7776EB9131506A597C05ADC89FFD35DEB4B063D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7776EB9131506A597C05ADC89FFD35DEB4B063D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AwesomeFM</string>
+		</dict>
+	</array>
+</dict>
+</plist>
